@@ -1,0 +1,77 @@
+AI Bootcamp Journey & Learning Path — PM Accelerator
+
+OVERVIEW
+The PM Accelerator AI Bootcamp is an intensive, project-based learning program designed to turn motivated individuals into job-ready AI engineers. The program runs for 12 weeks and is structured into four phases, each building on the last. Interns work in small cohort teams of 4–6 people and ship a real AI product by the end of the program.
+
+PHASE 1: FOUNDATIONS (Weeks 1–2)
+Focus: Python, APIs, and the AI development environment.
+
+Topics covered:
+- Python refresher: data structures, functions, async/await, type hints
+- Working with REST APIs: requests, httpx, authentication patterns
+- Environment setup: virtual environments, .env files, Docker basics
+- Introduction to LLMs: how transformers work, tokens, context windows
+- Calling LLM APIs: OpenAI, Anthropic, and Google Gemini SDKs
+- Prompt engineering: zero-shot, few-shot, chain-of-thought techniques
+- Version control best practices with Git and GitHub
+
+Deliverable: A working command-line tool that calls an LLM API with a well-engineered prompt and returns structured output.
+
+PHASE 2: RAG AND VECTOR DATABASES (Weeks 3–5)
+Focus: Retrieval-Augmented Generation pipelines.
+
+Topics covered:
+- Why RAG? Limitations of LLMs without grounding (hallucination, knowledge cutoffs)
+- Embeddings: what they are, how semantic similarity works
+- Embedding models: text-embedding-004 (Google), text-embedding-3-small (OpenAI)
+- Vector databases: MongoDB Atlas Vector Search, Pinecone, Chroma
+- Chunking strategies: fixed-size, recursive character, semantic chunking
+- Building a full RAG pipeline: ingest → embed → store → retrieve → generate
+- Evaluating RAG: faithfulness, relevance, groundedness metrics
+- Hybrid search: combining vector search with keyword (BM25) search
+
+Deliverable: A RAG-powered Q&A system over a custom document set, with an evaluation report.
+
+PHASE 3: AGENTS AND TOOL USE (Weeks 6–9)
+Focus: Building AI agents that can reason and take actions.
+
+Topics covered:
+- Function/tool calling: how LLMs call external functions
+- ReAct pattern: reasoning + acting in a loop
+- Building agents with LangChain and LlamaIndex
+- Tool design: writing clear tool descriptions that LLMs understand
+- Multi-step planning: breaking complex tasks into subtasks
+- Memory systems: short-term (conversation history) and long-term (vector store)
+- Agent evaluation: measuring task completion rates
+- Safety and guardrails: preventing prompt injection and misuse
+
+Deliverable: An autonomous agent that completes a multi-step task using at least 3 custom tools.
+
+PHASE 4: DEPLOYMENT AND PRODUCTION (Weeks 10–12)
+Focus: Shipping AI products that real users can interact with.
+
+Topics covered:
+- FastAPI: building async REST APIs for AI backends
+- Containerization: writing Dockerfiles, docker-compose for multi-service apps
+- Discord and Slack bots: integrating AI into communication platforms
+- Monitoring: logging LLM calls, tracking latency and token costs
+- CI/CD basics: GitHub Actions for automated testing and deployment
+- Cost optimization: prompt compression, caching, model selection
+- User feedback loops: thumbs up/down, collecting training data
+
+Deliverable: A fully deployed AI product with a real interface (Discord bot, web app, or Slack bot), documented and presented to the cohort.
+
+LEARNING RESOURCES
+Each phase comes with:
+- Video lectures (pre-recorded, 2–4 hours per phase)
+- Live office hours every Tuesday and Thursday at 6pm PST
+- A private Discord server for cohort communication and Q&A
+- Weekly 1:1 check-ins with your assigned mentor
+- A curated reading list of papers and blog posts
+
+GRADING AND MILESTONES
+- Phase deliverables: 40% of final grade
+- Final project: 40% of final grade
+- Participation (office hours, Discord, peer reviews): 20% of final grade
+- Minimum passing grade: 70%
+- Interns who score 85%+ receive a PM Accelerator Certificate of Excellence

@@ -1,0 +1,77 @@
+Intern FAQ — PM Accelerator AI Engineering Program
+
+GENERAL QUESTIONS
+
+Q: What is PM Accelerator?
+A: PM Accelerator is a structured internship and bootcamp program that trains aspiring AI engineers. We focus on practical, project-based learning where you ship real products using modern AI tools. The program is fully remote and runs in cohorts of 20–30 interns, mentored by active AI engineers from top companies.
+
+Q: Is PM Accelerator a paid internship?
+A: The program charges a participation fee that covers mentorship, infrastructure credits, and program materials. There is no salary — this is a training and portfolio-building program, not employment. Some high-performing interns are referred to hiring partners at the end of the program.
+
+Q: How long is the program?
+A: The program is 12 weeks long. It requires approximately 15–20 hours per week of commitment. Most interns treat it like a part-time job alongside their studies or current work.
+
+Q: What time zone does the program run in?
+A: Live sessions are held in PST (Pacific Standard Time). All sessions are recorded and posted within 24 hours for interns in other time zones.
+
+Q: Can I join if I live outside the United States?
+A: Yes. The program is fully remote and accepts interns globally. All materials are in English. You do not need a work visa since this is not employment.
+
+Q: What happens if I miss a live session?
+A: Recordings are posted to the program Notion page within 24 hours. You can submit async questions in Discord and mentors will answer them. Missing more than 3 sessions in a phase will affect your participation grade.
+
+TECHNICAL QUESTIONS
+
+Q: What computer do I need?
+A: Any modern laptop running macOS, Windows, or Linux. You will need Docker Desktop installed. 8GB RAM minimum; 16GB recommended. All computation happens in the cloud — you don't need a GPU.
+
+Q: Do I need to know machine learning or have trained models before?
+A: No. This program teaches you to build applications on top of existing LLMs using APIs. You will not train models from scratch. A solid Python background is required, but ML theory is not.
+
+Q: Which LLMs does the program use?
+A: We primarily use Google Gemini 1.5 Flash (for generation) and Google text-embedding-004 (for embeddings) because they are free tier via Google AI Studio and require no credit card. We also demonstrate OpenAI GPT-4o-mini and Anthropic Claude Haiku in comparisons. You are free to use any LLM for your final project.
+
+Q: Will I get API credits?
+A: Yes. Each intern receives Google AI Studio API key access, which covers all program exercises for free. For the final project, if you need paid API access beyond free tiers, we provide a small stipend of $20 in API credits per intern.
+
+Q: Do I need to set up my own MongoDB Atlas cluster?
+A: Yes. MongoDB Atlas M0 clusters are permanently free. You will create your own account and cluster in Week 1. The setup takes about 10 minutes and is documented step by step in the onboarding guide.
+
+Q: What is the Discord server used for?
+A: Discord is the primary communication hub for the program. Key channels include:
+- #announcements — program updates from the team
+- #weekly-updates — where you post your Friday progress update
+- #program-questions — questions for the Program Lead
+- #technical-help — peer-to-peer and mentor technical support
+- #off-topic — socializing with your cohort
+Each cohort also has a private channel for your team.
+
+Q: Can I use AI coding assistants like GitHub Copilot or Claude?
+A: Yes, strongly encouraged. Learning to work effectively with AI coding tools is itself a skill. All submitted work must be understood and explainable by you — if a mentor asks you to walk through your code, you should be able to do it. Copying code you don't understand is a fast path to struggling later in the program.
+
+DELIVERABLES AND GRADING
+
+Q: What if I submit a deliverable late?
+A: Late deliverables lose 10% of their possible grade per day late. After 5 days they receive a 0. Extensions are granted only for documented emergencies — reach out to your mentor before the deadline, not after.
+
+Q: How is the final project graded?
+A: Functionality (40%): Does it work? Can a user complete the intended task end-to-end?
+Code quality (30%): Is it readable, async, properly structured, and following program standards?
+Presentation (30%): Did you clearly explain what the product does, why it matters, and how it works?
+
+Q: What do I receive when I complete the program?
+A: All completing interns receive a digital Certificate of Completion. Interns who score 85% or above receive a Certificate of Excellence. High performers are added to the PM Accelerator talent network and may be referred to hiring partners.
+
+Q: Can I add this to my resume?
+A: Yes. You can list "AI Engineer Intern, PM Accelerator" on your resume. We recommend also linking your final project GitHub repository as a portfolio piece. Many hiring partners look specifically for candidates from the program.
+
+GETTING HELP
+
+Q: Who do I contact if I have a technical problem I can't solve?
+A: Post in #technical-help on Discord first — often a peer or mentor will respond quickly. If it's urgent or involves your personal account credentials, DM your assigned Senior Mentor directly.
+
+Q: Who do I contact for program logistics (schedule, grades, payments)?
+A: Post in #program-questions or DM the Program Lead. Do not DM mentors for logistics questions — they focus on technical mentorship.
+
+Q: I'm falling behind. What should I do?
+A: Tell your mentor immediately. We would rather slow down and make sure you understand the material than have you fall behind silently and drop out. Mentors can provide extra 1:1 time for interns who are struggling — but only if you ask.

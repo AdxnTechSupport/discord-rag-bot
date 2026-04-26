@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    networks:
+      - ragnet
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - "CMD"
+        - "python"
+        - "-c"
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.bot
+    env_file:
+      - .env
+    environment:
+      - API_BASE_URL=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - ragnet
+    restart: unless-stopped
+
+networks:
+  ragnet:
+    driver: bridge

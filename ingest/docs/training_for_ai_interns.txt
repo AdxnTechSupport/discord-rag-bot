@@ -1,0 +1,85 @@
+Training For AI Engineer Interns — PM Accelerator
+
+INTERN ROLE OVERVIEW
+AI Engineer Interns at PM Accelerator are expected to function as junior contributors on real product teams. You will write production-quality code, participate in code reviews, and ship features that real users interact with. This document describes what we expect from you technically and professionally.
+
+REQUIRED SKILLS ON DAY ONE
+You are expected to arrive with:
+- Comfortable Python programming (you can write a script without looking things up constantly)
+- Basic understanding of HTTP and REST APIs (GET, POST, JSON, status codes)
+- Familiarity with Git (commit, push, pull, branching, resolving merge conflicts)
+- Ability to read and write a Dockerfile
+- Basic command-line fluency (navigating directories, environment variables, running scripts)
+
+If you are missing any of these, complete the pre-program prep materials sent in your onboarding email before Week 1 begins.
+
+TECHNICAL STACK
+The primary stack used across PM Accelerator projects:
+
+Languages: Python 3.11+
+LLM SDKs: google-generativeai, openai, anthropic
+Vector DBs: MongoDB Atlas, Pinecone
+Frameworks: FastAPI (backends), discord.py (bots), Streamlit (quick demos)
+Infrastructure: Docker, docker-compose, GitHub Actions
+Embedding models: text-embedding-004 (Google), text-embedding-3-small (OpenAI)
+LLMs used: Gemini 1.5 Flash, GPT-4o-mini, Claude Haiku (cost-optimized choices)
+
+CODING STANDARDS
+All code submitted for review must meet these standards:
+1. Type hints on all function signatures
+2. Async functions for all I/O-bound operations (database calls, HTTP requests, LLM calls)
+3. No blocking calls inside async functions (use asyncio.to_thread() for sync libraries)
+4. Environment variables for all secrets — never hardcode API keys
+5. Structured logging using Python's logging module, not print statements (except scripts)
+6. Docstrings only where the "why" is non-obvious — don't document what the code already says
+7. Error handling with try/except at integration boundaries (external APIs, databases)
+8. Maximum function length: 50 lines. Break larger functions into smaller helpers.
+
+PULL REQUEST PROCESS
+- All work must go through pull requests — no direct pushes to main
+- PRs require at least one peer review before merging
+- PR descriptions must explain what changed and why, not just what the code does
+- Failing tests block merges — fix the tests, don't disable them
+- Keep PRs small: one logical change per PR
+
+MENTORSHIP STRUCTURE
+Each intern is assigned a Senior Mentor who is an active AI engineer in industry. Your mentor will:
+- Review your code weekly
+- Conduct 30-minute 1:1 video calls every other week
+- Be available on Discord for async questions (expect replies within 24 hours on weekdays)
+- Write your final performance review
+
+Additionally, a Program Lead runs the overall cohort and is available in the #program-questions channel on Discord.
+
+WEEKLY SCHEDULE
+Monday: New material released (videos + reading list)
+Tuesday: Live office hours, 6pm PST — Q&A on the week's content
+Wednesday: Cohort co-working session (optional, Zoom link in Discord)
+Thursday: Live office hours, 6pm PST — project help and code review
+Friday: Weekly progress update due in #weekly-updates Discord channel
+Saturday/Sunday: No scheduled sessions — catch up or rest
+
+PERFORMANCE EXPECTATIONS
+- Complete all phase deliverables on time (late submissions lose 10% per day)
+- Participate meaningfully in at least 4 office hours sessions per phase
+- Give peer feedback on at least 2 other interns' deliverables per phase
+- If you are struggling, surface it early — mentors cannot help if they don't know
+
+TOOLS AND ACCESS
+On Day 1 you will receive:
+- Invitation to the PM Accelerator Discord server (primary communication hub)
+- Access to the shared GitHub organization
+- MongoDB Atlas free cluster credentials for your cohort
+- API key credits for Google AI Studio (covers Gemini and embeddings for the program)
+- Notion access for the program wiki and project tracking board
+
+FINAL PROJECT REQUIREMENTS
+The final project must:
+- Solve a real problem (not a toy example)
+- Use at least one LLM and one retrieval mechanism
+- Have a working user interface (Discord bot, web app, or API with docs)
+- Be containerized with Docker and deployable with docker compose up
+- Include a README with setup instructions that a stranger can follow
+- Be presented in a 10-minute demo to the full cohort in Week 12
+
+Projects are judged on: functionality (40%), code quality (30%), and presentation (30%).
