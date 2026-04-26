@@ -1,6 +1,6 @@
 # PM Accelerator Discord RAG Bot
 
-A Discord slash-command bot that answers questions about PM Accelerator program documentation using Retrieval-Augmented Generation (RAG). It embeds queries with Google's `text-embedding-004`, retrieves relevant chunks from MongoDB Atlas Vector Search, and generates grounded answers with Gemini 1.5 Flash.
+A Discord slash-command bot that answers questions about PM Accelerator program documentation using Retrieval-Augmented Generation (RAG). It embeds queries with Google's `text-embedding-004`, retrieves relevant chunks from MongoDB Atlas Vector Search, and generates grounded answers with Groq
 
 ---
 
